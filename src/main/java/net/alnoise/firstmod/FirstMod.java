@@ -2,6 +2,7 @@ package net.alnoise.firstmod;
 
 import com.mojang.logging.LogUtils;
 import net.alnoise.firstmod.block.ModBlocks;
+import net.alnoise.firstmod.item.ModCreativeModeTabs;
 import net.alnoise.firstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,6 +25,8 @@ public class FirstMod {
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -45,6 +48,10 @@ public class FirstMod {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.ROSE_QUARTZ_BLOCK);
             event.accept(ModBlocks.RAW_ROSE_QUARTZ_BLOCK);
+            event.accept(ModBlocks.ROSE_QUARTZ_ORE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.GEODE_DETECTOR);
         }
     }
 

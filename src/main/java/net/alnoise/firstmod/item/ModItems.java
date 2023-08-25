@@ -1,6 +1,7 @@
 package net.alnoise.firstmod.item;
 
 import net.alnoise.firstmod.FirstMod;
+import net.alnoise.firstmod.item.custom.GeodeDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,6 +16,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_ROSE_QUARTZ = ITEMS.register("raw_rose_quartz",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GEODE_DETECTOR = ITEMS.register("geode_detector",
+            () -> new GeodeDetectorItem(new Item.Properties().durability(420)));
 
 
 

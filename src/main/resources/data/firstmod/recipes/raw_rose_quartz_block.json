@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "firstmod:raw_rose_quartz"
+    }
+  },
+  "result": {
+    "item": "firstmod:raw_rose_quartz_block"
+  }
+}

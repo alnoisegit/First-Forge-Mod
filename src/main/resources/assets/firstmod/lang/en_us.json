@@ -1,7 +1,13 @@
 {
   "item.firstmod.rose_quartz": "Rose Quartz",
   "item.firstmod.raw_rose_quartz": "Raw Rose Quartz",
+  "item.firstmod.geode_detector": "Geode Detector",
 
   "block.firstmod.rose_quartz_block": "Block of Rose Quartz",
-  "block.firstmod.raw_rose_quartz_block": "Raw Block of Rose Quartz"
+  "block.firstmod.raw_rose_quartz_block": "Raw Block of Rose Quartz",
+  "block.firstmod.rose_quartz_ore": "Rose Quartz Ore",
+
+  "creativetab.first_mod": "First Mod Tab",
+
+  "item.firstmod.geode_detector.no_valuables": "No Valuables Found!"
 }

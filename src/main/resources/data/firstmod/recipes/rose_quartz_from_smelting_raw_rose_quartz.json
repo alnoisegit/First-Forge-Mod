@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "rose_quartz",
+  "ingredient": {
+    "item": "firstmod:raw_rose_quartz"
+  },
+  "result": "firstmod:rose_quartz"
+}
