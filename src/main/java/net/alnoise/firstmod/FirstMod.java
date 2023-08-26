@@ -20,7 +20,7 @@ import org.slf4j.Logger;
 @Mod(FirstMod.MOD_ID)
 public class FirstMod {
     public static final String MOD_ID = "firstmod";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public FirstMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

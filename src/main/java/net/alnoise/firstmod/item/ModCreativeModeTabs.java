@@ -21,10 +21,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ROSE_QUARTZ.get());
                         output.accept(ModItems.RAW_ROSE_QUARTZ.get());
                         output.accept(ModItems.GEODE_DETECTOR.get());
+                        output.accept(ModItems.STRAWBERRY.get());
 
                         output.accept(ModBlocks.ROSE_QUARTZ_BLOCK.get());
                         output.accept(ModBlocks.RAW_ROSE_QUARTZ_BLOCK.get());
                         output.accept(ModBlocks.ROSE_QUARTZ_ORE.get());
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
 
                     }).build());
 

@@ -18,6 +18,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GEODE_DETECTOR = ITEMS.register("geode_detector",
             () -> new GeodeDetectorItem(new Item.Properties().durability(420)));
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.STRAWBERRY)));
 
 
 
