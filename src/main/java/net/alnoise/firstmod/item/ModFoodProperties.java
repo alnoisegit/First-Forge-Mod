@@ -7,5 +7,8 @@ import net.minecraft.world.food.FoodProperties;
 public class ModFoodProperties {
     public static final FoodProperties STRAWBERRY = new FoodProperties.Builder().nutrition(4).saturationMod(0.25f)
             .effect(() -> new MobEffectInstance(MobEffects.JUMP, 200), 0.5f).build();
+    public static final FoodProperties GOLDEN_STRAWBERRY = new FoodProperties.Builder().nutrition(4).saturationMod(0.25f)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 200), 0.5f)
+            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600), 1f).build();
 
 }

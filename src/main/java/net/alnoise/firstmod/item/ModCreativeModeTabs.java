@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_ROSE_QUARTZ.get());
                         output.accept(ModItems.GEODE_DETECTOR.get());
                         output.accept(ModItems.STRAWBERRY.get());
+                        output.accept(ModItems.GOLDEN_STRAWBERRY.get());
+                        output.accept(ModItems.HEMP_WICK.get());
 
                         output.accept(ModBlocks.ROSE_QUARTZ_BLOCK.get());
                         output.accept(ModBlocks.RAW_ROSE_QUARTZ_BLOCK.get());

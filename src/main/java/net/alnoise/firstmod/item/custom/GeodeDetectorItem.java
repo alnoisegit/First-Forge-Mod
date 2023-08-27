@@ -1,5 +1,6 @@
 package net.alnoise.firstmod.item.custom;
 
+import net.alnoise.firstmod.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
@@ -64,7 +65,7 @@ public class GeodeDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState blockState) {
-        return blockState.is(Blocks.AMETHYST_BLOCK) || blockState.is(Blocks.SMOOTH_BASALT) || blockState.is(Blocks.CALCITE);
+        return blockState.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
 
     @Override

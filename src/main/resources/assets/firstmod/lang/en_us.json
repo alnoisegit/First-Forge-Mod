@@ -3,6 +3,8 @@
   "item.firstmod.raw_rose_quartz": "Raw Rose Quartz",
   "item.firstmod.geode_detector": "Geode Detector",
   "item.firstmod.strawberry": "Strawberry",
+  "item.firstmod.golden_strawberry": "Golden Strawberry",
+  "item.firstmod.hemp_wick": "Hemp Wick",
 
   "block.firstmod.rose_quartz_block": "Block of Rose Quartz",
   "block.firstmod.raw_rose_quartz_block": "Raw Block of Rose Quartz",
@@ -14,5 +16,5 @@
   "item.firstmod.geode_detector.no_valuables": "No Valuables Found!",
 
   "tooltip.firstmod.geode_detector.tooltip.shift": "Right click the ground to search for a Geode!",
-  "tooltip.firstmod.geode_detector.tooltip": "Hold shift for more info"
+  "tooltip.firstmod.geode_detector.tooltip": "Hold §bSHIFT§r for more info"
 }

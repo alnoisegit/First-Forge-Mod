@@ -1,6 +1,7 @@
 package net.alnoise.firstmod.item;
 
 import net.alnoise.firstmod.FirstMod;
+import net.alnoise.firstmod.item.custom.FuelItem;
 import net.alnoise.firstmod.item.custom.GeodeDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,10 @@ public class ModItems {
             () -> new GeodeDetectorItem(new Item.Properties().durability(420)));
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(ModFoodProperties.STRAWBERRY)));
+    public static final RegistryObject<Item> GOLDEN_STRAWBERRY = ITEMS.register("golden_strawberry",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.GOLDEN_STRAWBERRY)));
+    public static final RegistryObject<Item> HEMP_WICK = ITEMS.register("hemp_wick",
+            () -> new FuelItem(new Item.Properties(), 200));
 
 
 
