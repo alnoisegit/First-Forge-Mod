@@ -25,6 +25,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.GOLDEN_STRAWBERRY)));
     public static final RegistryObject<Item> HEMP_WICK = ITEMS.register("hemp_wick",
             () -> new FuelItem(new Item.Properties(), 200));
+    public static final RegistryObject<Item> SQUID_MEAL = ITEMS.register("squid_meal",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SQUID_MEAL)));
 
 
 

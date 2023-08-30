@@ -6,6 +6,7 @@ import net.alnoise.firstmod.item.ModItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -33,7 +34,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.ROSE_QUARTZ.get())
                 .unlockedBy("has_rose_quartz", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.ROSE_QUARTZ.get())
                         .build()))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(FirstMod.MOD_ID, "rose_quartz_block_from_rose_quartz"));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.GEODE_DETECTOR.get())
                 .pattern("  A")
@@ -46,6 +47,34 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.SQUID_MEAL.get())
+                .pattern("AB ")
+                .pattern("   ")
+                .pattern("   ")
+                .define('A', Items.INK_SAC)
+                .define('B', Items.SUGAR)
+                .unlockedBy("has_ink_sac", inventoryTrigger(ItemPredicate.Builder.item().of(Items.INK_SAC)
+                        .build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ROSE_QUARTZ_SLAB.get())
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("AAA")
+                .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
+                .unlockedBy("has_rose_quartz_block", inventoryTrigger(ItemPredicate.Builder.item().of(ModBlocks.ROSE_QUARTZ_BLOCK.get())
+                        .build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ROSE_QUARTZ_STAIRS.get())
+                .pattern("  A")
+                .pattern(" AA")
+                .pattern("AAA")
+                .define('A', ModBlocks.ROSE_QUARTZ_BLOCK.get())
+                .unlockedBy("has_rose_quartz_block", inventoryTrigger(ItemPredicate.Builder.item().of(ModBlocks.ROSE_QUARTZ_BLOCK.get())
+                        .build()))
+                .save(pWriter);
+
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ROSE_QUARTZ.get(), 9)
@@ -54,8 +83,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .build()))
                 .save(pWriter);
 
+
         nineBlockStorageRecipes(pWriter, RecipeCategory.MISC, ModItems.RAW_ROSE_QUARTZ.get(), RecipeCategory.MISC, ModBlocks.RAW_ROSE_QUARTZ_BLOCK.get(),
                 "firstmod:raw_rose_quartz", "rose_quartz", "firstmod:raw_rose_quartz_block", "rose_quartz");
+
+        //slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ROSE_QUARTZ_SLAB.get(), Ingredient.of(ModBlocks.ROSE_QUARTZ_BLOCK.get()));
+
         oreSmelting(pWriter, ROSE_QUARTZ_SMELTABLES, RecipeCategory.MISC, ModItems.ROSE_QUARTZ.get(), 0.25f, 200, "rose_quartz");
         oreBlasting(pWriter, ROSE_QUARTZ_SMELTABLES, RecipeCategory.MISC, ModItems.ROSE_QUARTZ.get(), 0.3f, 100, "rose_quartz");
 
@@ -77,6 +110,5 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                     pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(pFinishedRecipeConsumer, FirstMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
-
     }
 }

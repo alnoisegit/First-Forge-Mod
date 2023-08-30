@@ -5,11 +5,24 @@
   "item.firstmod.strawberry": "Strawberry",
   "item.firstmod.golden_strawberry": "Golden Strawberry",
   "item.firstmod.hemp_wick": "Hemp Wick",
+  "item.firstmod.squid_meal": "Squid n' Sugar",
 
   "block.firstmod.rose_quartz_block": "Block of Rose Quartz",
   "block.firstmod.raw_rose_quartz_block": "Raw Block of Rose Quartz",
   "block.firstmod.rose_quartz_ore": "Rose Quartz Ore",
   "block.firstmod.sound_block": "Sound Block",
+
+  "block.firstmod.rose_quartz_stairs": "Rose Quartz Stairs",
+  "block.firstmod.rose_quartz_slab": "Rose Quartz Slab",
+
+  "block.firstmod.rose_quartz_pressure_plate": "Rose Quartz Pressure Plate",
+  "block.firstmod.rose_quartz_button": "Rose Quartz Button",
+  "block.firstmod.rose_quartz_fence": "Rose Quartz Fence",
+  "block.firstmod.rose_quartz_fence_gate": "Rose Quartz Fence Gate",
+  "block.firstmod.rose_quartz_wall": "Rose Quartz Wall",
+
+  "block.firstmod.rose_quartz_trapdoor": "Rose Quartz Trap Door",
+  "block.firstmod.rose_quartz_door": "Rose Quartz Door",
 
   "creativetab.first_mod": "First Mod Tab",
 

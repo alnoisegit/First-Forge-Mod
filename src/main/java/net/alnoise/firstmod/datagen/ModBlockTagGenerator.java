@@ -26,12 +26,27 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ROSE_QUARTZ_BLOCK.get())
                 .add(ModBlocks.RAW_ROSE_QUARTZ_BLOCK.get())
-                .add(ModBlocks.ROSE_QUARTZ_ORE.get());
+                .add(ModBlocks.ROSE_QUARTZ_ORE.get())
+                .add(ModBlocks.ROSE_QUARTZ_SLAB.get())
+                .add(ModBlocks.ROSE_QUARTZ_STAIRS.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ROSE_QUARTZ_BLOCK.get())
                 .add(ModBlocks.RAW_ROSE_QUARTZ_BLOCK.get())
-                .add(ModBlocks.ROSE_QUARTZ_ORE.get());
+                .add(ModBlocks.ROSE_QUARTZ_ORE.get())
+                .add(ModBlocks.ROSE_QUARTZ_STAIRS.get())
+                .add(ModBlocks.ROSE_QUARTZ_SLAB.get());
+
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.ROSE_QUARTZ_FENCE.get());
+
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.ROSE_QUARTZ_WALL.get());
+
     }
 
     @Override

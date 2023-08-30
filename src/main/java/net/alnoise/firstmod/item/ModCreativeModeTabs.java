@@ -24,11 +24,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STRAWBERRY.get());
                         output.accept(ModItems.GOLDEN_STRAWBERRY.get());
                         output.accept(ModItems.HEMP_WICK.get());
+                        output.accept(ModItems.SQUID_MEAL.get());
 
                         output.accept(ModBlocks.ROSE_QUARTZ_BLOCK.get());
                         output.accept(ModBlocks.RAW_ROSE_QUARTZ_BLOCK.get());
                         output.accept(ModBlocks.ROSE_QUARTZ_ORE.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
+                        output.accept(ModBlocks.ROSE_QUARTZ_STAIRS.get());
+                        output.accept(ModBlocks.ROSE_QUARTZ_SLAB.get());
+                        output.accept(ModBlocks.ROSE_QUARTZ_BUTTON.get());
+                        output.accept(ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.ROSE_QUARTZ_FENCE.get());
+                        output.accept(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get());
+                        output.accept(ModBlocks.ROSE_QUARTZ_WALL.get());
+                        output.accept(ModBlocks.ROSE_QUARTZ_DOOR.get());
+                        output.accept(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
 
                     }).build());
 

@@ -21,10 +21,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ROSE_QUARTZ_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_ROSE_QUARTZ_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_BUTTON.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_FENCE.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_WALL.get());
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_TRAPDOOR.get());
 
         this.add(ModBlocks.ROSE_QUARTZ_ORE.get(),
                 block -> createOreDrop(ModBlocks.ROSE_QUARTZ_ORE.get(), ModItems.RAW_ROSE_QUARTZ.get()));
 
+        this.dropSelf(ModBlocks.ROSE_QUARTZ_STAIRS.get());
+        this.add(ModBlocks.ROSE_QUARTZ_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROSE_QUARTZ_SLAB.get()));
+
+        this.add(ModBlocks.ROSE_QUARTZ_DOOR.get(),
+                block -> createDoorTable(ModBlocks.ROSE_QUARTZ_DOOR.get()));
 
     }
 
